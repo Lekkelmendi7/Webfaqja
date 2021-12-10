@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#container
+{
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
+  height: 125px;
+}
+#badge
+{
+  position: absolute;
+  background-color: rgb(93, 160, 182);
+  color: white;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 14px;
+  top: 20px;
+  right: 78px;
+}
+#badge:hover{
+  background-color: blue;
+}
+#user
+{
+    display: flex;
+    padding: 17px;  
+}
+#shopName 
+{
+  font-size: 35px; 
+  font-family: 'Lato', sans-serif;
+}
+#shopName a
+{
+  text-decoration: none;
+  color: blue;
+}
+#shopName > b
+{
+  font-weight: 900;
+  font: blue;
+}
+#search
+{
+  padding: 8px;
+}
+#search input[type="button"] {
+  padding: 15px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  box-shadow: blue;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+#search input[type="button"]:hover{
+  background-color: rgb(107, 177, 201);
+}
+.addedToCart
+{
+  font-size: 1.5em;
+  margin-right: 36px;
+  color: white;
+}
+.addedToCart:hover{
+  color: blue;
+}
+#search input[type="text"] 
+{
+  width: 650px;
+  height: 43px;
+  padding: 2px 25px;
+  border: none;
+  border-radius: 7px;
+}
+#search input[type="text"]::placeholder
+{
+  font-weight: bold;
+}
+#search input[type="text"]:focus
+{
+  outline: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 59px;
+  z-index: 447;
+  padding: 8px 0 15px;
+}
+.navbar_div {
+  display: flex;
+  
+}
+.navbar_div_ul{
+  font-size: 20px;
+  width: 15%;
+  margin: auto;
+  display: flex;
+  padding-top: 15px;
+  padding-right: 170px;
+  list-style: none;
+}
+.navbar_div_li a{
+  text-decoration: none;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+}
+.navbar_div_li a:hover{
+  color: rgb(107, 177, 201);
+}
+
+@media only screen and (max-width: 1162px){
+  #search input[type="text"]{
+    width: 350px;
+  }
+  .navbar_div_li a{
+    margin-left: -10px;
+  }
+}
+@media only screen and (max-width: 865px){
+  #search input[type="text"]{
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 688px){
+ .navbar #btn-menu:checked ~ .icon-menu .bars{
+     display: block;
+  }
+}
