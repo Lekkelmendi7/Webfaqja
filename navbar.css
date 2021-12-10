@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 #container
 {
   background-color: lightblue;
@@ -52,7 +53,7 @@
   padding: 8px;
 }
 #search input[type="button"] {
-  padding: 15px;
+  padding: 12px;
   border-radius: 7px;
   outline: none;
   border: none;
@@ -76,7 +77,7 @@
 #search input[type="text"] 
 {
   width: 650px;
-  height: 43px;
+  height: 38px;
   padding: 2px 25px;
   border: none;
   border-radius: 7px;
@@ -120,6 +121,18 @@
 .navbar_div_li a:hover{
   color: rgb(107, 177, 201);
 }
+.hidden{
+  display: none;
+}
+.navbar .icon-menu {
+  float: right;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000; 
+ }
+
 
 @media only screen and (max-width: 1162px){
   #search input[type="text"]{
@@ -130,12 +143,101 @@
   }
 }
 @media only screen and (max-width: 865px){
-  #search input[type="text"]{
+ #search input[type="text"]{
     width: 200px;
   }
 }
 @media only screen and (max-width: 688px){
- .navbar #btn-menu:checked ~ .icon-menu .bars{
-     display: block;
+.navbar .navbar_div{
+ position: absolute;
+ top: 60px;
+ left: 0;
+ width: 100%;
+ z-index: 1;
+ background-color: lightblue;
+ transform: translateX(-100%);
+ transform: all .5s ease-out; 
+}
+.navbar_div_li a:hover{
+  background-color: lightblue;
+}
+.navbar .times .bars {
+ display: block;
+ margin-top: -5rem; 
+}
+.navbar .icon-menu {
+ float: right;
+ margin-top: 1rem;
+ margin-right: 2rem;
+ font-size: 1.5rem;
+ cursor: pointer;
+ color: #000; 
+}
+.navbar .navbar_div .navbar_div_ul .navbar_div_li:hover {
+ display: none;
+}
+.navbar .navbar_div .icon-menu:hover {
+ text-shadow: 0 1rem 2rem rgba(235, 31, 39, 0.8); 
+}
+.navbar_div .navbar_div_ul {
+ display: block; 
+}
+.navbar #btn-menu:checked .navbar_div{
+ display: none;
+}
+.navbar #btn-menu:checked ~ .navbar_div{
+ transform: translateX(0%);
+}
+.navbar #btn-menu:checked ~ .icon-menu .bars{
+ display: none;
+}
+.navbar #btn-menu:checked ~ .icon-menu .times{
+ display: block;
+}
+.navbar #btn-menu:checked ~ .icon-menu .bars{
+ display: block;
+}
+#shopName{
+ font-size: 25px;
+ margin-top: 20px;
+ }
+ #search input[type="text"]{
+  width: 120px;
+}
+.addedToCart{
+  font-size: 18px;
+}
+
+}
+@media only screen and (max-width: 555px){
+  #search input[type="text"]{
+    width: 70px; 
   }
+  #search input[type="button"]{
+    width: 120px; 
+    display: block;
+  }
+  .addedToCart{
+    font-size: 14px;
+  }
+  #shopName{
+  font-size: 18px;
+  margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 396px){
+  #search input[type="text"]{
+    width: 32px; 
+  }
+  #search input[type="button"]{
+    width: 80px; 
+    display: block;
+  }
+  .addedToCart{
+    font-size: 10px;
+  }
+  #shopName{
+    font-size: 14px;
+    margin-top: 20px;
+    }
 }
