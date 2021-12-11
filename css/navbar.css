@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 #container
 {
   background-color: lightblue;
@@ -95,9 +94,10 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 59px;
+  top: 67px;
   z-index: 447;
   padding: 8px 0 15px;
+  background-color: lightblue;
 }
 .navbar_div {
   display: flex;
@@ -132,8 +132,6 @@
   cursor: pointer;
   color: #000; 
  }
-
-
 @media only screen and (max-width: 1162px){
   #search input[type="text"]{
     width: 350px;
@@ -147,7 +145,7 @@
     width: 200px;
   }
 }
-@media only screen and (max-width: 688px){
+@media only screen and (max-width: 732px){
 .navbar .navbar_div{
  position: absolute;
  top: 60px;
@@ -219,6 +217,9 @@
   }
   .addedToCart{
     font-size: 14px;
+  }
+  .navbar{
+    top: 115px;
   }
   #shopName{
   font-size: 18px;

@@ -1,0 +1,131 @@
+footer{
+ position: fixed;
+ bottom: 0px;
+ width: 100%;
+ background: #111;
+ color: #d9d9d9;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+.content1{
+ display: flex;
+}
+.content1 .box{
+ flex-basis: 50%;
+ padding: 10px 20px;
+}
+.box h2{
+ font-size: 20px;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+.box .content{
+ margin: 25px 0 0 0;
+ position: relative;
+}
+.box .content::before{
+ position: absolute;
+ content: '';
+ top: -10px;
+ height: 2px;
+ width: 100%;
+ background: blue;
+}
+.box .content::after{
+ position: absolute;
+ content: '';
+ height: 2px;
+ width: 15%;
+ background: lightblue;
+ top: -10px;
+}
+.left .content p{
+ text-align: left;
+}
+.left .content .social{
+ margin: 25px 0 0 0;
+}
+.left .content .social a{
+ padding: 0 3px;
+}
+.left .content .social a span{
+ height: 40px;
+ width: 40px;
+ background: rgb(90, 170, 197);
+ line-height: 40px;
+ text-align: center;
+ font-size: 18px;
+ border-radius: 10px;
+ transition: 0.3s;
+}
+.left .content .social a span:hover{
+ background: blue;
+}
+.center .content .fas{
+ font-size: 25px;
+ background: rgb(90, 170, 197);
+ height: 45px;
+ width: 45px;
+ line-height: 45px;
+ text-align: center;
+ border-radius: 50%;
+ transition: 0.3s;
+ cursor: pointer;
+}
+.center .content .fas:hover{
+ background: blue;
+}
+.center .content .text{
+ font-size: 20px;
+ font-weight: 500;
+ padding-left: 20px;
+ cursor: pointer;
+}
+.center .content .phone{
+ margin: 25px 0;
+}
+.right .nav1 ul{
+ padding: 15px;
+ list-style: none;
+ margin: 20px;
+}
+.right .nav1 ul li{
+ padding: 7px;
+}
+.right .nav1 ul li a{
+ text-decoration: none;
+ color: rgb(90, 170, 197);
+ font-size: 25px;
+}
+.right .nav1 ul li a:hover{
+ color: blue;
+}
+.bottom center{
+ padding: 5px;
+ font-size: 15px;
+ background: #151515;
+}
+.bottom center span{
+ color: #656565;
+}
+.bottom center a{
+ color: blue;
+ text-decoration: none;
+}
+.bottom center a:hover{
+ text-decoration: underline;
+ color: rgb(90, 170, 197);
+}
+@media only screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .content1{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .content1 .box{
+    margin: 5px 0;
+  }
+}
