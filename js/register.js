@@ -3,6 +3,7 @@ const form = document.querySelector('.signup-form'),
   lnameField = document.querySelector('.lname'),
   emailField = document.querySelector('.email'),
   passwordField = document.querySelector('.password'),
+  confirmPasswordField = document.querySelector('.passwordC'),
   submitBtn = document.querySelector('.disabled'),
   errorMsg = document.querySelector('.error-msg'),
   msg = document.querySelector('.signup-msg');
@@ -17,7 +18,8 @@ const form = document.querySelector('.signup-form'),
   let userIsValid = false,
   lnameIsValid = false,
   emailIsValid = false,
-  passIsValid = false;
+  passIsValid = false,
+  cPassIsValid = false;
         
   
   
@@ -33,7 +35,7 @@ const form = document.querySelector('.signup-form'),
         errorMsg.style.display = 'block'
         userIsValid = false
       }
-      if(userIsValid && lnameIsValid && emailIsValid && passIsValid){
+      if(userIsValid && lnameIsValid && emailIsValid && passIsValid && cPassIsValid){
         submitBtn.classList.remove('disabled')
         submitBtn.disabled = false
       }
@@ -53,7 +55,7 @@ const form = document.querySelector('.signup-form'),
           errorMsg.style.display = 'block'
           lnameIsValid = false
         }
-        if(userIsValid && lnameIsValid && emailIsValid && passIsValid){
+        if(userIsValid && lnameIsValid && emailIsValid && passIsValid && cPassIsValid){
           submitBtn.classList.remove('disabled')
           submitBtn.disabled = false
         }
@@ -74,7 +76,7 @@ const form = document.querySelector('.signup-form'),
         errorMsg.style.display = 'block'
         emailIsValid = false
       }
-      if(userIsValid && lnameIsValid && emailIsValid && passIsValid){
+      if(userIsValid && lnameIsValid && emailIsValid && passIsValid && cPassIsValid){
         submitBtn.classList.remove('disabled')
         submitBtn.disabled = false
       }
@@ -95,7 +97,27 @@ const form = document.querySelector('.signup-form'),
         errorMsg.style.display = 'block'
         passIsValid = false
       }
-      if(userIsValid && lnameIsValid && emailIsValid && passIsValid){
+      if(userIsValid && lnameIsValid && emailIsValid && passIsValid  && cPassIsValid){
+        submitBtn.classList.remove('disabled')
+        submitBtn.disabled = false
+      }
+      else{
+        submitBtn.classList.add('disabled')
+        submitBtn.disabled = true
+      }
+    })
+    confirmPasswordField.addEventListener('input', function(e){
+      if(passwordField.value === confirmPasswordField.value){
+        errorMsg.style.display = 'none'
+        cPassIsValid = true
+      }
+      else{
+        errorMsg.textContent = "Konfirmimi i password-it duhet te jete i njejt me password-in"
+        errorMsg.style.top = '420px'
+        errorMsg.style.display = 'block'
+        cPassIsValid = false
+      }
+      if(userIsValid && lnameIsValid && emailIsValid && passIsValid  && cPassIsValid){
         submitBtn.classList.remove('disabled')
         submitBtn.disabled = false
       }
@@ -112,15 +134,16 @@ const form = document.querySelector('.signup-form'),
 
   submitBtn.addEventListener('click', function(e){
     e.preventDefault()
-    if(userNameField.value !== '' && lnameField.value !== '' && emailField.value !== '' && passwordField.value !== ''){
+    if(userNameField.value !== '' && lnameField.value !== '' && emailField.value !== '' && passwordField.value !== '' && confirmPasswordField.value !== ''){
       errorMsg.style.display = 'none'
-      if(userIsValid && lnameIsValid && emailIsValid && passIsValid){
+      if(userIsValid && lnameIsValid && emailIsValid && passIsValid && cPassIsValid){
         errorMsg.style.display = 'none'
 
         userNameField.value = ''
         lnameField.value = ''
         emailField.value = ''
         passwordField.value = ''
+        confirmPasswordField.value = ''
       }
       else{
         errorMsg.textContent = "Ndodhi nje gabim. Kontrolloni te dhenat tuaja dhe provoni perseri"
