@@ -163,19 +163,8 @@
  display: block;
  margin-top: -5rem; 
 }
-.navbar .icon-menu {
- float: right;
- margin-top: 1rem;
- margin-right: 2rem;
- font-size: 1.5rem;
- cursor: pointer;
- color: #000; 
-}
-.navbar .navbar_div .navbar_div_ul .navbar_div_li:hover {
- display: none;
-}
-.navbar .navbar_div .icon-menu:hover {
- text-shadow: 0 1rem 2rem rgba(235, 31, 39, 0.8); 
+.navbar .icon-menu:hover {
+ text-shadow: 0 1rem 2rem rgba(68, 31, 235, 0.8); 
 }
 .navbar_div .navbar_div_ul {
  display: block; 
