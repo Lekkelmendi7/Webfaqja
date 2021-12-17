@@ -1,6 +1,7 @@
 const form = document.querySelector('.signup-form'),
   userNameField = document.querySelector('.name'),
   lnameField = document.querySelector('.lname'),
+  subjectField = document.querySelector('.subject'),
   submitBtn = document.querySelector('.disabled'),
   errorMsg = document.querySelector('.error-msg'),
   msg = document.querySelector('.contact-msg');
@@ -9,7 +10,8 @@ const form = document.querySelector('.signup-form'),
   lnameRegEx = /^[A-Za-z .]{4,15}$/;
 
   let userIsValid = false,
-  lnameIsValid = false;
+  lnameIsValid = false,
+  subjectIsValid = false;
 
 
   function contactFields(){
@@ -58,13 +60,14 @@ const form = document.querySelector('.signup-form'),
 
 submitBtn.addEventListener('click', function(e){
     e.preventDefault()
-    if(userNameField.value !== '' && lnameField.value !== ''){
+    if(userNameField.value !== '' && lnameField.value !== '' && subjectField.value !== ''){
       errorMsg.style.display = 'none'
       if(userIsValid && lnameIsValid){
         errorMsg.style.display = 'none'
 
         userNameField.value = ''
         lnameField.value = ''
+        subjectField.value = ''
       }
       else{
         errorMsg.textContent = "Ndodhi nje gabim. Kontrolloni te dhenat tuaja dhe provoni perseri"
