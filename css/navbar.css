@@ -105,7 +105,7 @@
 }
 .navbar_div_ul{
   font-size: 20px;
-  width: 15%;
+  width: 22%;
   margin: auto;
   display: flex;
   padding-top: 15px;
@@ -125,19 +125,17 @@
   display: none;
 }
 .navbar .icon-menu {
-  float: right;
-  margin-top: 1rem;
-  margin-right: 2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #000; 
+  display: none;
  }
 @media only screen and (max-width: 1162px){
   #search input[type="text"]{
     width: 350px;
   }
   .navbar_div_li a{
-    margin-left: -10px;
+    margin-left: -5px;
+  }
+  .navbar_div_ul{
+    width: 30%;
   }
 }
 @media only screen and (max-width: 865px){
@@ -155,6 +153,19 @@
  background-color: lightblue;
  transform: translateX(-100%);
  transform: all .5s ease-out; 
+}
+.navbar_div_ul{
+  width: 0%;
+  padding-left: 100px;
+}
+.navbar .icon-menu{
+  display: inline;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000; 
 }
 .navbar_div_li a:hover{
   background-color: lightblue;
@@ -177,9 +188,6 @@
 }
 .navbar #btn-menu:checked ~ .icon-menu .bars{
  display: none;
-}
-.navbar #btn-menu:checked ~ .icon-menu .times{
- display: block;
 }
 .navbar #btn-menu:checked ~ .icon-menu .bars{
  display: block;
@@ -224,10 +232,14 @@
     display: block;
   }
   .addedToCart{
-    font-size: 10px;
+    font-size: 15px;
+    margin: -13px;
   }
   #shopName{
     font-size: 14px;
     margin-top: 20px;
-    }
+  }
+  #badge{
+    margin-right: -42px;
+  }
 }

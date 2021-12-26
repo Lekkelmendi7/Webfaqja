@@ -121,3 +121,8 @@
       margin-left: 10px;
     }
   }
+  @media only screen and (max-width: 311px){
+    .pr{
+      margin-left: -5px;
+    }
+  }
