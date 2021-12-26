@@ -151,7 +151,6 @@
     line-height: 1.4;
     width: 400pt;
     height: 100pt;
-    transition: all 0.2s;
     margin:40pt;
     padding: 10pt;
     border-radius: 10pt;;
@@ -175,4 +174,11 @@
       transform: translateX(-730%);
       margin: 40pt;
       height:20pt;
+    }
+
+    .scroll-bar{
+      overflow-x:scroll;
+      overflow-y:scroll;
+      height:auto;
+      width:auto;
     }
