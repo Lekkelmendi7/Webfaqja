@@ -1,3 +1,14 @@
+<?php
+include_once '../classes/contactAdmin.class.php';
+include_once '../classes/database.class.php';
+
+session_start();
+
+
+$contactClass = new ContactAdmin();
+$contactClass->fetchContacts();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,42 +79,9 @@
     <th>Mesazhi</th>
     <th>Fshije</th>
   </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta delectus repellat, fugit, eius libero modi commodi natus est aspernatur harum temporibus maxime dolor accusamus laudantium nam distinctio laboriosam, dolorum sed et. Laboriosam repellendus laborum obcaecati officiis vitae totam sed beatae repellat dolorum sunt! Minima ipsa quia architecto molestiae quam.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor id quo veniam maxime, reprehenderit nihil doloribus tempore ea, illum corrupti cum esse dignissimos magni error perferendis ut assumenda pariatur facere architecto? Maiores saepe dolor nulla a quisquam consectetur, architecto, ab assumenda autem cumque quae at animi iste aliquid iure debitis natus laudantium cum exercitationem molestiae! Recusandae esse tempora alias amet temporibus laudantium optio dignissimos, aut suscipit id cum rerum omnis facere praesentium illo repellendus cumque mollitia accusamus harum quod necessitatibus assumenda vero. Quibusdam eveniet suscipit aperiam corrupti, rem autem quis doloremque beatae eius laudantium voluptatum voluptatem, est aliquam similique.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor id quo veniam maxime, reprehenderit nihil doloribus tempore ea, illum corrupti cum esse dignissimos magni error perferendis ut assumenda pariatur facere architecto? Maiores saepe dolor nulla a quisquam consectetur, architecto, ab assumenda autem cumque quae at animi iste aliquid iure debitis natus laudantium cum exercitationem molestiae! Recusandae esse tempora alias amet temporibus laudantium optio dignissimos, aut suscipit id cum rerum omnis facere praesentium illo repellendus cumque mollitia accusamus harum quod necessitatibus assumenda vero. Quibusdam eveniet suscipit aperiam corrupti, rem autem quis doloremque beatae eius laudantium voluptatum voluptatem, est aliquam similique.</td>
-    <td><button class="delete">Delete</button></td>
-  </tr>
+  <?php $contactClass->echoContacts(); ?>
+  
+  
 </table>
 
 <div style="text-align: center; padding-top: 50px;">

@@ -1,3 +1,9 @@
+<?php
+include_once 'classes/contact.class.php';
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +40,12 @@
 </main>
 <section class="contact1">
     <div class="conatct1_box">
-       <form class="contact-form" action="#" method="POST">
+       <form class="contact-form" action="include/contact.inc.php" method="POST">
            <h1>Contact Form</h1>
-           <input type="text" class="name" name="username" placeholder="Emri"/><br>
+           <input type="text" class="name" name="name" placeholder="Emri"/><br>
            <input type="text" class="lname" name="lname" placeholder="Mbiemri"/><br>
            <textarea id="subject" class="subject" name="subject" placeholder="Mesazhi juaj" style="height:150px"></textarea><br>
-           <input type="submit" class="disabled" value="Dergo" disabled/>
+           <input type="submit" name="submit" class="disabled" value="Dergo" disabled/>
            <span class="error-msg"></span>
        </form>
     </div>
