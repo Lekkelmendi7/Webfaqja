@@ -24,10 +24,14 @@ class contact{
       $this->query->bindParam('subject', $this->subject);
 
       if($this->query->execute()){
-          header("Location: ../Produktet.php");
+        echo "<script>alert('Mesazhi eshte derguar me sukses, Faleminderit per mesazhin!');
+        document.location='../Kontakt.php';
+        </script>";
       }
       else{
-        header("Location: ../Kontakt.php");
+        echo "<script>alert('Duhet ti plotesoni te gjitha fushat.');
+        document.location='../Kontakt.php';
+        </script>";
       }
   }
 }
