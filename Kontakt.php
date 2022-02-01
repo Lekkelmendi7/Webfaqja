@@ -1,6 +1,5 @@
 <?php
 include_once 'classes/contact.class.php';
-session_start();
 
 ?>
 <!DOCTYPE html>

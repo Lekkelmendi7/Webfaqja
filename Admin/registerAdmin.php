@@ -1,3 +1,13 @@
+<?php
+include_once '../classes/registerAdmin.class.php';
+include_once '../classes/database.class.php';
+
+
+$registerClass = new RegisterAdmin();
+$registerClass->fetchRegisters();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,26 +83,12 @@
     <th>Emri</th>
     <th>Mbiemri</th>
     <th>Email</th>
-    <th>Fshije</th>
+    <th>Action</th>
   </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Test@gmail.com</td>
-    <td><a href="editRegisterAdmin.php"><button class="edit">Edit</button></a><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>Test1@gmail.com</td>
-    <td><a href="editRegisterAdmin.php"><button class="edit">Edit</button></a><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td>Enes</td>
-    <td>Hetemi</td>
-    <td>test2@gmail.com</td>
-    <td><a href="editRegisterAdmin.php"><button class="edit">Edit</button></a><button class="delete">Delete</button></td>
-  </tr>
+  
+  <?php $registerClass->echoRegister(); ?>
+
+
 </table>
 
 <div style="text-align: center; padding-top: 50px;">

@@ -23,7 +23,7 @@ const form = document.querySelector('.signup-form'),
         
   
   
-  function Fields(){
+  function registerFields(){
     userNameField.addEventListener('input', function(e){
       if(this.value === '' || usernameRegEx.test(e.target.value)){
         errorMsg.style.display = 'none'
@@ -129,31 +129,4 @@ const form = document.querySelector('.signup-form'),
   }
 
   
-  Fields()
-
-
-  submitBtn.addEventListener('click', function(e){
-    e.preventDefault()
-    if(userNameField.value !== '' && lnameField.value !== '' && emailField.value !== '' && passwordField.value !== '' && confirmPasswordField.value !== ''){
-      errorMsg.style.display = 'none'
-      if(userIsValid && lnameIsValid && emailIsValid && passIsValid && cPassIsValid){
-        errorMsg.style.display = 'none'
-
-        userNameField.value = ''
-        lnameField.value = ''
-        emailField.value = ''
-        passwordField.value = ''
-        confirmPasswordField.value = ''
-      }
-      else{
-        errorMsg.textContent = "Ndodhi nje gabim. Kontrolloni te dhenat tuaja dhe provoni perseri"
-        errorMsg.style.top = '20px'
-        errorMsg.style.display = 'block'
-      }
-    }
-      else{
-        errorMsg.textContent = "Duhet ti plotesoni te gjitha fushat!"
-        errorMsg.style.top = '20px'
-        errorMsg.style.display = 'block'
-      }
-  })
+  registerFields()

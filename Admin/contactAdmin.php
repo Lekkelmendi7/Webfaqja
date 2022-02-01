@@ -2,8 +2,6 @@
 include_once '../classes/contactAdmin.class.php';
 include_once '../classes/database.class.php';
 
-session_start();
-
 
 $contactClass = new ContactAdmin();
 $contactClass->fetchContacts();

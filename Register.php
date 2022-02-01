@@ -1,3 +1,8 @@
+<?php
+include_once 'classes/register.class.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +14,13 @@
 </head>
 <body>
     <h1>Register Form</h1>
-    <form class="signup-form" action="#" method="POST">
+    <form class="signup-form" action="include/register.inc.php" method="POST">
       <input type="text" class="name" name="username" placeholder="Emri"/>
       <input type="text" class="lname" name="lname" placeholder="Mbiemri"/>
       <input type="email" class="email" name="email" placeholder="Email"/>
       <input type="password" class="password" name="password" placeholder="Password"/>
       <input type="password" class="passwordC" name="passwordC" placeholder="Konfirmo Password-in"/>
-      <input type="submit" class="disabled" value="Regjistohu" disabled/>
+      <input type="submit" name="submit" class="disabled" value="Regjistohu" disabled/>
       <span class="error-msg"></span>
     </form>
     <div style="text-align: center; padding-top: 10px;">Jeni te regjistruar: <a href="Login.html" style="color: blue; text-decoration: none;">Logohu</a></div>
