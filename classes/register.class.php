@@ -20,8 +20,10 @@ class register{
   }
   
   public function doRegister(){
-
-      $this->role = 'user';
+      
+      $this->password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+      $this->passwordC = password_hash($_POST['passwordC'], PASSWORD_BCRYPT);
+      $this->role = 'User';
       $this->conn = new db();
 
       $this->sql = 'INSERT INTO register (name, lname, email, password, passwordC, role) VALUES (:name, :lname, :email, :password, :passwordC, :role)';
