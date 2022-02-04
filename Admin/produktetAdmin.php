@@ -1,3 +1,12 @@
+<?php
+include_once '../classes/productAdmin.adminclass.php';
+include_once '../classes/database.class.php';
+
+
+$productClass = new ProductAdminA();
+$productClass->fetchProducts();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,20 +98,9 @@
     <th>Pershkrimi</th>
     <th>Veprim</th>
   </tr>
-  <tr>
-    <td><img style="width:80px; height:80;" src="../img/Laptopdell.jpg"></td>
-    <td>Llaptop Dell</td>
-    <td>$800</td>
-    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem obcaecati temporibus blanditiis. At laudantium facere magnam perferendis neque tempora error voluptates magni reprehenderit accusamus, quod ipsa iusto corporis, molestias dolorem aperiam in nemo, aspernatur numquam illo ut assumenda culpa esse. Officia ullam velit laborum accusamus assumenda nam earum quos perferendis.</td>
-    <td><a href="editAdmin.php"><button class="edit">Edit</button></a><button class="delete">Delete</button></td>
-  </tr>
-  <tr>
-    <td><img style="width:80px; height:80;" src="../img/Laptophp.png"></td>
-    <td>Llaptop Hp</td>
-    <td>$600</td>
-    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facere cum nihil, excepturi enim ipsam eius unde sequi expedita consequuntur?</td>
-    <td><a href="editAdmin.php"><button class="edit">Edit</button></a><button class="delete">Delete</button></td>
-  </tr>
+  
+  <?php $productClass->echoProducts(); ?>
+
 </table>
 
 <div style="text-align: center; padding-top: 50px;">

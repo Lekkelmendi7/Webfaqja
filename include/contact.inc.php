@@ -1,7 +1,6 @@
 <?php
 include_once '../classes/contact.class.php';
 include_once '../classes/database.class.php';
-session_start();
 
 
  $name = $_POST['name'];

@@ -1,6 +1,7 @@
 .pr{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .product1{
     padding-top: 30px;

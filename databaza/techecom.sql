@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2022 at 07:44 PM
+-- Generation Time: Feb 04, 2022 at 10:31 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -48,6 +48,34 @@ INSERT INTO `contact` (`id`, `name`, `lname`, `subject`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `titull` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `pershk` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `titull`, `price`, `pershk`) VALUES
+(1, 'Laptop Hp', '$600', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum beatae nulla quam aspernatur in dolor amet fugiat dolore cupiditate.'),
+(2, 'Laptop dell', '$500', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci quod aspernatur delectus voluptatem velit?'),
+(3, 'Iphone12', '$700', 'Lorem ipsum dolor sit amet consectetur.'),
+(4, 'Samsung J7', '$200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto quos laborum enim laboriosam ducimus provident impedit rerum veritatis iste minima harum magnam vitae aperiam dolores autem sapiente repellendus, sint molestiae! Provident deser'),
+(5, 'Iphone 13', '$1200', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nisi?'),
+(6, 'Iphone 8', '$300', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet saepe ducimus natus provident vel!'),
+(7, 'Iphone 11', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?'),
+(8, 'Samsung A21', '$450', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum asperiores est itaque ex aspernatur.'),
+(9, 'Laptop Asus', '$1200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus eveniet tempore similique voluptates velit? Assumenda incidunt tempora odit corrupti eos consequatur vel suscipit recusandae!');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `register`
 --
 
@@ -82,6 +110,12 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `register`
 --
 ALTER TABLE `register`
@@ -96,6 +130,12 @@ ALTER TABLE `register`
 --
 ALTER TABLE `contact`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `register`
