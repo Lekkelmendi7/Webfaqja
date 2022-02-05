@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2022 at 10:31 PM
+-- Generation Time: Feb 05, 2022 at 02:20 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -63,15 +63,14 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `titull`, `price`, `pershk`) VALUES
-(1, 'Laptop Hp', '$600', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum beatae nulla quam aspernatur in dolor amet fugiat dolore cupiditate.'),
+(1, 'Laptop hp', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consectetur? Commodi omnis eaque necessitatibus quisquam, illo consequuntur minima, reiciendis eligendi reprehenderit atque blanditiis, earum quo!'),
 (2, 'Laptop dell', '$500', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci quod aspernatur delectus voluptatem velit?'),
 (3, 'Iphone12', '$700', 'Lorem ipsum dolor sit amet consectetur.'),
 (4, 'Samsung J7', '$200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto quos laborum enim laboriosam ducimus provident impedit rerum veritatis iste minima harum magnam vitae aperiam dolores autem sapiente repellendus, sint molestiae! Provident deser'),
 (5, 'Iphone 13', '$1200', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nisi?'),
 (6, 'Iphone 8', '$300', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet saepe ducimus natus provident vel!'),
-(7, 'Iphone 11', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?'),
-(8, 'Samsung A21', '$450', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum asperiores est itaque ex aspernatur.'),
-(9, 'Laptop Asus', '$1200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus eveniet tempore similique voluptates velit? Assumenda incidunt tempora odit corrupti eos consequatur vel suscipit recusandae!');
+(7, 'Iphone 11 Pro', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?'),
+(8, 'Samsung A21', '$450', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum asperiores est itaque ex aspernatur.');
 
 -- --------------------------------------------------------
 
@@ -96,7 +95,7 @@ CREATE TABLE `register` (
 INSERT INTO `register` (`id`, `name`, `lname`, `email`, `password`, `passwordC`, `role`) VALUES
 (6, 'admin', 'selman', 'admin@gmail.com', '$2y$10$7e0gBzmd7h4YSTMyyAmfl.4pLZNzJwODjH2HqhEUUkuXmm4AAYXB.', '$2y$10$OLm3jYtyyplVd/D.v.gm5eVJ.zTIeLRZKbxQ1u6xaJGXsOgW15kT6', 'Admin'),
 (7, 'Enes', 'Hetemi', 'enes@gmail.com', '$2y$10$95PywxKfgAwAKi76gpBqH.MX0pPnWIMLj34frmWSP2ryRpP/4wioG', '$2y$10$XwWbN8.4eAQTnSRFXtFs8.v0AnsMVykh1HhMdsjP4uZfMwXUUND8m', 'Admin'),
-(8, 'Test', 'Tute', 'Test@gmail.com', '$2y$10$nSNxZvmEEZB0Ug.AUOPkyOftmTRN6AM7mHCqkBUWUgicmdKFtYpkS', '$2y$10$Q8F0Q0xZQNOPbEbROeJTH.Q7n/nGd5zBVmGkkX5gXSpmngnB4R4b2', 'User'),
+(8, 'Test', 'Tut', 'Test@gmail.com', '$2y$10$nSNxZvmEEZB0Ug.AUOPkyOftmTRN6AM7mHCqkBUWUgicmdKFtYpkS', '$2y$10$Q8F0Q0xZQNOPbEbROeJTH.Q7n/nGd5zBVmGkkX5gXSpmngnB4R4b2', 'User'),
 (10, 'edon', 'Hetem', 'edon@gmail.com', '$2y$10$/TO1VvFMN6MMRC3pWtEYiecu3c5Kclg6MZBl3xL1eGd3mN8uO6Tj6', '$2y$10$.VqhLzCfhNVKwDtjRRDwPO6oluUlqlXX9hXCkBpEMVjv/iVp.fz9i', 'User');
 
 --
