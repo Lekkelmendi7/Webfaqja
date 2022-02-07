@@ -1,3 +1,13 @@
+<?php
+include_once 'classes/contactsFooter.class.php';
+include_once 'classes/database.class.php';
+
+
+$contactClass = new ContactsF();
+$contactClass->fetchContacts();
+
+?>
+
 <div class="footer">
     <div class="content1">
       <div class="left box">
@@ -13,21 +23,7 @@
         </div>
       </div>
       <div class="center box">
-        <h2>Adresa</h2>
-        <div class="content">
-          <div class="place">
-            <span class="fas fa-map-marker-alt"></span>
-            <span class="text">Bill Klinton, Kosova</span>
-          </div>
-          <div class="phone">
-            <span class="fas fa-phone-alt"></span>
-            <span class="text">+383-44-111-111</span>
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span>
-            <span class="text">email@gmail.com</span>
-          </div>
-        </div>
+        <?php $contactClass->echoContact(); ?>
       </div>
       <div class="right box">
         <h2>Navbar</h2>

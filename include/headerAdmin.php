@@ -18,7 +18,6 @@
                             
                         <li class="navbar_div_li"><a href="Mainpage.html">Ballina</a></li>
                         <li class="navbar_div_li"><a href="produktetAdmin.php">Produktet</a></li>
-                        <li class="navbar_div_li"><a href="shoppingAdmin.php">Porosit</a></li>
                         <li class="navbar_div_li"><a href="registerAdmin.php">Regjistrimet</a></li>
                         <li class="navbar_div_li"><a href="contactAdmin.php">Kontaktimet</a></li>
                          

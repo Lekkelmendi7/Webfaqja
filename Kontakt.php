@@ -1,5 +1,11 @@
 <?php
 include_once 'classes/contact.class.php';
+include_once 'classes/contacts.class.php';
+include_once 'classes/database.class.php';
+
+
+$contactClass = new Contacts();
+$contactClass->fetchContacts();
 
 ?>
 <!DOCTYPE html>
@@ -21,20 +27,7 @@ include_once 'classes/contact.class.php';
 </header>
 
 <main id="main">
-    <div class="contact">
-        <div class="contact_one_box">
-          <h3>Adresa</h3>
-          <p><i class="fas fa-map-marker-alt"></i><br>Bill Klinton, Kosova</p>
-           </div>
-        <div class="contact_one_box">
-          <h3>Numri i Kontaktit</h3>
-           <p><i class="fas fa-phone-alt"></i><br>+383-44-111-111</p>
-        </div>
-        <div class="contact_one_box">
-          <h3>Email</h3>
-            <p><i class="fas fa-envelope"></i><br>email.gmail.com</p>
-        </div>
-    </div>
+   <?php $contactClass->echoContact(); ?>
 </main>
 <section class="contact1">
     <div class="conatct1_box">

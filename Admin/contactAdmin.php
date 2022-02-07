@@ -1,10 +1,14 @@
 <?php
 include_once '../classes/contactAdmin.class.php';
+include_once '../classes/contactsAdminUpdate.class.php';
 include_once '../classes/database.class.php';
 
 
 $contactClass = new ContactAdmin();
 $contactClass->fetchContacts();
+
+$contactUClass = new ContactUpdate();
+$contactUClass->fetchContactsU();
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +57,14 @@ $contactClass->fetchContacts();
     background-color: blue;
     color: white;
 }
+.edit{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+}
 .delete{
     background-color: red;
     color: white;
@@ -79,6 +91,17 @@ $contactClass->fetchContacts();
   </tr>
   <?php $contactClass->echoContacts(); ?>
   
+  
+</table><br><br><br>
+<h1 class="title">Ndryshimi i Kontakteve</h1>
+<table class="class">
+  <tr>
+    <th>Adresa</th>
+    <th>Numri Kontaktues</th>
+    <th>Email</th>
+    <th>Update</th>
+  </tr>
+  <?php $contactUClass->echoContact(); ?>
   
 </table>
 
