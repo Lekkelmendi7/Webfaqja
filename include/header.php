@@ -9,7 +9,7 @@
             <input type="button" value="Search">
         </div>
         <div id="user">
-            <a href="Shopping.php"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+            <a href="#"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
 
         </div>
 
