@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2022 at 02:20 PM
+-- Generation Time: Feb 10, 2022 at 09:36 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -42,8 +42,27 @@ INSERT INTO `contact` (`id`, `name`, `lname`, `subject`) VALUES
 (1, 'enes', 'hetemi', 'hello12'),
 (2, 'enen', 'hejej', 'Hello Hello'),
 (3, 'edon', 'Hetemi', 'Hello'),
-(6, 'Enes', 'hehehe', 'ejejjej'),
-(9, 'enenr', 'hetererr', 'hello hello hello');
+(6, 'Enes', 'hehehe', 'ejejjej');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
+  `Adresa` varchar(255) NOT NULL,
+  `Nrkontaktit` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `Adresa`, `Nrkontaktit`, `email`) VALUES
+(1, 'Bill Klinton, Kosova', '+383-44-111-111', 'email.gmail.com');
 
 -- --------------------------------------------------------
 
@@ -69,8 +88,7 @@ INSERT INTO `product` (`id`, `titull`, `price`, `pershk`) VALUES
 (4, 'Samsung J7', '$200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto quos laborum enim laboriosam ducimus provident impedit rerum veritatis iste minima harum magnam vitae aperiam dolores autem sapiente repellendus, sint molestiae! Provident deser'),
 (5, 'Iphone 13', '$1200', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nisi?'),
 (6, 'Iphone 8', '$300', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet saepe ducimus natus provident vel!'),
-(7, 'Iphone 11 Pro', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?'),
-(8, 'Samsung A21', '$450', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum asperiores est itaque ex aspernatur.');
+(7, 'Iphone 11 Pro', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?');
 
 -- --------------------------------------------------------
 
@@ -109,6 +127,12 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -129,6 +153,12 @@ ALTER TABLE `register`
 --
 ALTER TABLE `contact`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
+--
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `product`
