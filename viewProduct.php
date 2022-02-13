@@ -62,7 +62,7 @@ $productsClass->editProductId();
 </header>
 <form action="" method="post">
 <div class="view">
-   <img src="img/Laptophp.png">
+   <img src="img/upload/<?php echo $productsClass->product['image']?>">
 </div>
 <div class="view1">
    <h1><?php echo $productsClass->product['titull']?></h1><br>

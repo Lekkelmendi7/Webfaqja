@@ -15,9 +15,10 @@ class ProductAdminA{
     public function echoProducts(){
         foreach($this->products as $product){
             $id = $product['id'];
+            $imageurl = $product['image'];
             echo"
             <tr>
-              <td><img style='width:80px; height:80;' src='../img/Laptophp.png''></td>
+              <td><img style='width:80px; height:80;' src='../img/upload/{$imageurl}''></td>
               <td>{$product['titull']}</td>
               <td>{$product['price']}</td>
               <td>{$product['pershk']}</td>
