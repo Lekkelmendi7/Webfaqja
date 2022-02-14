@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 10, 2022 at 09:36 PM
+-- Generation Time: Feb 14, 2022 at 08:55 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -74,21 +74,23 @@ CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `titull` varchar(255) NOT NULL,
   `price` varchar(255) NOT NULL,
-  `pershk` varchar(255) NOT NULL
+  `pershk` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `titull`, `price`, `pershk`) VALUES
-(1, 'Laptop hp', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consectetur? Commodi omnis eaque necessitatibus quisquam, illo consequuntur minima, reiciendis eligendi reprehenderit atque blanditiis, earum quo!'),
-(2, 'Laptop dell', '$500', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci quod aspernatur delectus voluptatem velit?'),
-(3, 'Iphone12', '$700', 'Lorem ipsum dolor sit amet consectetur.'),
-(4, 'Samsung J7', '$200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto quos laborum enim laboriosam ducimus provident impedit rerum veritatis iste minima harum magnam vitae aperiam dolores autem sapiente repellendus, sint molestiae! Provident deser'),
-(5, 'Iphone 13', '$1200', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nisi?'),
-(6, 'Iphone 8', '$300', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet saepe ducimus natus provident vel!'),
-(7, 'Iphone 11 Pro', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?');
+INSERT INTO `product` (`id`, `titull`, `price`, `pershk`, `image`) VALUES
+(1, 'Laptop hp', '$750', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consectetur? Commodi omnis eaque necessitatibus quisquam, illo consequuntur minima, reiciendis eligendi reprehenderit atque blanditiis, earum quo!', 'Laptophp.png'),
+(2, 'Laptop dell', '$500', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci quod aspernatur delectus voluptatem velit?', 'Laptopdell.jpg'),
+(3, 'Iphone12', '$700', 'Lorem ipsum dolor sit amet consectetur.', 'Iphone12.jpg'),
+(4, 'Samsung J7', '$200', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto quos laborum enim laboriosam ducimus provident impedit rerum veritatis iste minima harum magnam vitae aperiam dolores autem sapiente repellendus, sint molestiae! Provident deser', 'SamsungJ7.jpg'),
+(5, 'Iphone 13', '$1200', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nisi?', 'Iphone13.jpg'),
+(6, 'Iphone 8', '$300', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet saepe ducimus natus provident vel!', 'Iphone8.jpeg'),
+(7, 'Iphone 11 Pro', '$650', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus nesciunt, reiciendis debitis, molestias optio minus quisquam beatae vero itaque accusantium voluptatem vitae reprehenderit ipsam maxime quia? Explicabo, esse fuga?', 'IphoneX.jpg'),
+(19, 'Iphone 13', '$850', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illum excepturi distinctio ratione qui temporibus nesciunt saepe vitae officia voluptates, eos voluptas sit suscipit, harum quam delectus. Mollitia, provident dicta?', '620921a910a0d6.52133538.jpeg');
 
 -- --------------------------------------------------------
 
@@ -164,7 +166,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `register`

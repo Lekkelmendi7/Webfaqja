@@ -63,7 +63,7 @@ include_once '../classes/productAdmin.class.php';
     </header>
   <h1 class="title">Shto Produkte</h1>
     <form action="../include/product.inc.php" method="POST" enctype='multipart/form-data'>
-    <input type="file" class="file" name="image"><br><br>
+    Foto: <input type="file" class="file" name="image"><br><br>
         <input type="text" class="Titulli" name="titull" placeholder="Shkruani titullin e produktit"><br><br>
         <input type="text" class="Qmimi" name="price" placeholder="Shkruani qmimin e produktit"><br><br>
         <textarea id="persh" class="persh" name="pershk" placeholder="Pershkruani Produktin" style="width: 80%; height: 230px;"></textarea><br><br>
