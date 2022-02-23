@@ -1,10 +1,15 @@
 <?php
 include_once '../classes/productAdmin.adminclass.php';
+include_once '../classes/sliderAdmin.adminclass.php';
 include_once '../classes/database.class.php';
 
 
 $productClass = new ProductAdminA();
 $productClass->fetchProducts();
+
+
+$sliderClass = new SliderAdminA();
+$sliderClass->fetchSliders();
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +92,7 @@ $productClass->fetchProducts();
     <?php include_once '../include/headerAdmin.php'?>
 </header>
 <a href="createProdukt.php">
-    <button class="create">Create</button>
+    <button class="create">Create Produkt</button>
 </a>
          <h1 class="title">Lista e Produkteve</h1>
 <table class="class">
@@ -101,6 +106,20 @@ $productClass->fetchProducts();
   
   <?php $productClass->echoProducts(); ?>
 
+</table><br><br><br>
+
+<a href="createSlider.php">
+    <button class="create">Create Slider</button>
+</a>
+
+<h1 class="title">Menaxhimi i Slider</h1>
+<table class="class">
+  <tr>
+    <th>Foto</th>
+    <th>Fshije</th>
+  </tr>
+  <?php $sliderClass->echoSliders(); ?>
+  
 </table>
 
 <div style="text-align: center; padding-top: 50px;">
