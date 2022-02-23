@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2022 at 08:55 PM
+-- Generation Time: Feb 23, 2022 at 02:07 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -118,6 +118,26 @@ INSERT INTO `register` (`id`, `name`, `lname`, `email`, `password`, `passwordC`,
 (8, 'Test', 'Tut', 'Test@gmail.com', '$2y$10$nSNxZvmEEZB0Ug.AUOPkyOftmTRN6AM7mHCqkBUWUgicmdKFtYpkS', '$2y$10$Q8F0Q0xZQNOPbEbROeJTH.Q7n/nGd5zBVmGkkX5gXSpmngnB4R4b2', 'User'),
 (10, 'edon', 'Hetem', 'edon@gmail.com', '$2y$10$/TO1VvFMN6MMRC3pWtEYiecu3c5Kclg6MZBl3xL1eGd3mN8uO6Tj6', '$2y$10$.VqhLzCfhNVKwDtjRRDwPO6oluUlqlXX9hXCkBpEMVjv/iVp.fz9i', 'User');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider`
+--
+
+CREATE TABLE `slider` (
+  `id` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`id`, `image`) VALUES
+(1, 'Iphone12.jpg'),
+(2, 'Iphone8.jpeg'),
+(3, 'SamsungJ7.jpg');
+
 --
 -- Indexes for dumped tables
 --
@@ -147,6 +167,12 @@ ALTER TABLE `register`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -166,13 +192,19 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
