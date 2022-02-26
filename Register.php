@@ -23,7 +23,7 @@ include_once 'classes/register.class.php';
       <input type="submit" name="submit" class="disabled" value="Regjistohu" disabled/>
       <span class="error-msg"></span>
     </form>
-    <div style="text-align: center; padding-top: 10px;">Jeni te regjistruar: <a href="Login.html" style="color: blue; text-decoration: none;">Logohu</a></div>
+    <div style="text-align: center; padding-top: 10px;">Jeni te regjistruar: <a href="Login.php" style="color: blue; text-decoration: none;">Logohu</a></div>
 <div style="text-align: center; padding-top: 20px;">
     <span class="credit" style="text-align: center;">Ndertuar nga <a href="https://www.google.com" style="color: blue; text-decoration: none;">Enes Hetemi</a></span>
   </div>

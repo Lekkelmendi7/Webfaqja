@@ -31,7 +31,7 @@ $contactClass->fetchContacts();
           <div class="nav1">
             <ul>
               <li><a href="Mainpage.php">Ballina</a></li>
-              <li><a href="Produktet.php">Produktet</a></li>
+              <li><a href="index.php">Produktet</a></li>
               <li><a href="Rreth Nesh.php">RethNesh</a></li>
               <li><a href="Kontakt.php">Kontakti</a></li>
             </ul>
@@ -41,7 +41,7 @@ $contactClass->fetchContacts();
     </div>
     <div class="bottom">
       <center>
-        <span class="credit">Ndertuar nga <a href="https://www.google.com">Enes Hetemi</a> | </span>
+        <span class="credit">Ndertuar nga <a href="https://www.google.com">TechCom</a> | </span>
         <span class="far fa-copyright"></span><span> 2022 Te gjitha te drejtat e rezervuara</span>
       </center>
     </div>

@@ -1,6 +1,7 @@
 <?php
 include_once 'classes/productAdmin.adminclass.php';
 include_once 'classes/database.class.php';
+include_once 'classes/isUser.class.php';
 
 $conn = new db();
 $productsClass = new ProductAdminA();
@@ -58,7 +59,14 @@ $productsClass->editProductId();
 </head>
 <body>
 <header>
-    <?php include_once 'include/header.php';?>
+    <?php include_once 'include/header.php';
+    $User = new isUser();
+    if (!$User->UserIs()) {
+        echo "<script>alert('Duhet te logoheni qe te shikoni me shume!');
+        document.location='Login.php';
+        </script>";
+    }
+    ?>
 </header>
 <form action="" method="post">
 <div class="view">
@@ -68,6 +76,7 @@ $productsClass->editProductId();
    <h1><?php echo $productsClass->product['titull']?></h1><br>
    <h2>Qmimi: <strong><?php echo $productsClass->product['price']?></strong></h2><br>
    <p><?php echo $productsClass->product['pershk']?></p><br>
+   <p><strong>Autori: </strong><?php echo $productsClass->product['autori']?></p><br>
    <input type='number' class='quantity' name='quantity' min='1' value='1'><br>
    <button class="create">Shto Produktin</button>
 </div>

@@ -1,7 +1,18 @@
+<?php
+session_start();
+?>
+
+
 <section>
             
     <div id="container">
-        
+    <?php if(isset($_SESSION['name'])): ?>
+    <p>Welcome, <?php echo $_SESSION['name'];?>
+    <?php if($_SESSION['role'] == "Admin" ): ?>
+    <a href="Admin/produktetAdmin.php">Admin Panel</a>
+    <?php endif; ?>
+    / <a href="logout.php">Logout</a></p>
+    <?php endif; ?>
         <div id="shopName"><a href="#"> <b>Tech</b>Ecom </a></div>
             
             <div id="search">
@@ -23,11 +34,11 @@
                 
                 <ul class="navbar_div_ul">
                     
-                <li class="navbar_div_li"><a href="Mainpage.html">Ballina</a></li>
-                <li class="navbar_div_li"><a href="Produktet.php">Produktet</a></li>
-                <li class="navbar_div_li"><a href="Rreth Nesh.html">RrethNesh</a></li>
+                <li class="navbar_div_li"><a href="Mainpage.php">Ballina</a></li>
+                <li class="navbar_div_li"><a href="index.php">Produktet</a></li>
+                <li class="navbar_div_li"><a href="Rreth Nesh.php">RrethNesh</a></li>
                 <li class="navbar_div_li"><a href="Kontakt.php">Kontakti</a></li>
-                <li class="navbar_div_li"><a href="Login.html">Login</a></li>
+                <li class="navbar_div_li"><a href="Login.php">Login</a></li>
                 <li class="navbar_div_li"><a href="Register.php">Register</a></li>
                 </ul>     
         </div>

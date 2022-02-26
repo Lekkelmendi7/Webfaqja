@@ -5,16 +5,18 @@ class ProductAdmin{
   private $pershk;
   private $image;
   private $images;
+  private $autori;
 
   private $conn;
   private $sql;
   private $query;
 
-  public function __construct($titull, $price, $pershk, $image){
+  public function __construct($titull, $price, $pershk, $image, $autori){
       $this->titull = $titull;
       $this->price = $price;
       $this->pershk = $pershk;
       $this->image = $image;
+      $this->autori = $autori;
   }
 
   public function UploadImageProduct(){
@@ -38,12 +40,14 @@ class ProductAdmin{
 
       $this->conn = new db();
 
-      $this->sql = 'INSERT INTO product (titull, price, pershk, image) VALUES (:titull, :price, :pershk, :image)';
+      $this->sql = 'INSERT INTO product (titull, price, pershk, image, autori) VALUES (:titull, :price, :pershk, :image, :autori)';
       $this->query = $this->conn->getConn()->prepare($this->sql);
       $this->query->bindParam('titull', $this->titull);
       $this->query->bindParam('price', $this->price);
       $this->query->bindParam('pershk', $this->pershk);
       $this->query->bindParam('image', $this->images);
+      $this->query->bindParam('autori', $this->autori);
+
 
       if($this->query->execute()){
         echo "<script>alert('Ju keni shtuar me sukses produktin');
