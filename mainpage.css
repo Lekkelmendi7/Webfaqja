@@ -5,7 +5,7 @@
   
         .main{
             background-color: lightgray;
-            height: auto;
+            height: 10pt auto;
             width:auto;
             position: relative;
         }
@@ -25,7 +25,7 @@
         
   
       .banner {
-        margin: 3%;
+        
         position: relative;
     }
     .first_txt {
@@ -88,43 +88,86 @@
   .four{
    padding-left: 30pt;
   }
-        
+          
   
-  @media only screen and (max-width:400pt){
-    .banner img{
-       height: 80pt; 
-       width:80pt; 
-       padding:50pt;
-      }
-.first_txt{
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 15pt;
-    font-family: Arial;
-    width:120pt;
-    height:40pt;
-}
-
-.img-square img{
-width:150pt;
-height:150pt;
-}
-    }
+  
  
-    /*
-    style="width:200pt; height:200pt;"
-*/
-    @media only screen and (max-width:848pt){
-      .banner img{
-         height: 180pt; 
-         width:800pt; 
-         padding:100pt
-        }
-      }
-        
+ 
+
+    .img-square {
+      position: relative;
+      margin: 3%;
+      cursor: pointer;
+  }
+  .four-img {
+    display: flex;
+    }
+    .img-square {
+      position: relative;
+      margin: 3%;
+      cursor: pointer;
   
+    width:200pt;
+    height:200pt;
+  }
+  
+
+.images {
+  width: 200pt;
+}
+.img-square-border{
+  width:200pt;
+  height:200pt;
+}
+ 
+.four{
+  padding-left: 30pt;
+ }
+
+ /*
+ *style="width:200pt; height:200pt;"
+ */
+    
+    
+
+    @media only screen and (min-width: 400px) {
+      .banner img{
+        height:200pt;
+        width:550pt;
+        padding:100pt;
+      }
+
+      .first_txt{
+        font-size: 25pt;
+      }
+
+      .img-square img{
+        width:160pt;
+        height:120pt;
+      }
+      .img-square{
+        position: relative;
+        margin: 3%;
+        cursor: pointer;
+        width: 200pt;
+        height:150pt;
+      }
+
+      .img-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 10pt;
+        font-family: Arial;
+        background-color: white;
+        width: 100pt;
+        height: 30pt;
+        text-align: center;
+    }
+
+    
       
-     
+      }
+  
