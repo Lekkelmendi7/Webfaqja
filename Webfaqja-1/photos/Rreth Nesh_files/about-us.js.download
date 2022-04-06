@@ -1,0 +1,30 @@
+function ValidateTextBox() {
+    if (document.getElementById("txtName").value=="") {
+        alert("Ju lutem jepni me shume shpjegime rreth sherbimit tone!");
+        return false;
+      }
+    else{
+    var str= document.getElementById("txtName").value;
+    alert("Ju sapo keni dhene pergjigjje, falimenderit!");
+    }
+    
+    function clearElements(){
+      document.getElementById("txtName").value='';
+    }
+  }
+
+   var images=['C:\Users\Admin\Documents\GitHub\Webfaqja-1\photos\cpu.jpg','C:\Users\Admin\Documents\GitHub\Webfaqja-1\photos\server.jpeg',
+   'C:\Users\Admin\Documents\GitHub\Webfaqja-1\photos\company.jpeg', 'C:\Users\Admin\Documents\GitHub\Webfaqja-1\photos\razer.jpeg'];
+
+   var i= 0;
+   function slideshow() {
+     document.getElementById("image").src= images[i];
+    if (i<images.length-1){
+    i++;
+   }else{
+     i=0;
+   }
+   setTimeout("slideshow()",2000);
+   }
+
+   window.onload = slideshow;

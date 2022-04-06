@@ -1,0 +1,35 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.pagination > a{
+    background-color: lightblue;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 7px 10px;
+    min-width: 18px;
+    height: 35px;
+    text-decoration: none;
+    position: relative;
+    padding: 2px 10px;
+}
+.pagination > a:hover{
+    background-color: blue;
+    padding: 3px 12px;
+}
+.pagination > a.page-active{
+    background-color: blue;
+}
+.pagination > a.page-active:hover{
+    background-color: lightblue;
+}
+@media only screen and (max-width: 406px){
+    .pagination > a{
+        margin: 0 2px 3px;
+    }
+}
