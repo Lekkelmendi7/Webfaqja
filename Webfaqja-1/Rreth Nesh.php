@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rreth Nesh</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="about_us.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <script src="about-us.js"></script>
+        
+    </head>
+    <body>
+
+      <?php
+      
+      ?>
+        <header>
+            <section>
+                
+        <div id="container">
+            
+            <div id="shopName"><a href=""> <b>Tech</b>Ecom </a></div>
+                
+                <div id="search">
+                <input type="text" name="searchBox" placeholder="Search">
+                <input type="button" value="Search">
+            </div>
+            <div id="user">       
+                <a href=""> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+    
+            </div>
+    
+            <div class="navbar">
+                <input type="checkbox" name="" id="btn-menu" class="hidden">
+                    <label for="btn-menu" class="icon-menu">
+                <i class="fa fa-bars bars"></i>
+                
+                </label>
+                <div class="navbar_div">
+                    
+                    <ul class="navbar_div_ul">
+                        
+                    <li class="navbar_div_li"><a href="Mainpage.html">Ballina</a></li>
+                    <li class="navbar_div_li"><a href="Produktet.html">Produktet</a></li>
+                    <li class="navbar_div_li"><a href="Rreth Nesh.html">RrethNesh</a></li>
+                    <li class="navbar_div_li"><a href="Kontakt.html">Kontakti</a></li>
+                    <li class="navbar_div_li"><a href="Login.html">Login</a></li>
+                    <li class="navbar_div_li"><a href="Register.html">Register</a></li>
+                    <li class="navbar_div_li"><a href="Shopping.html">Shopping</a></li>
+                    </ul>     
+            </div>
+        </div>
+            </div>
+        </section>
+    </header>
+    <main>
+      <div class="themain">
+
+        <div class="maintxt">
+          <center><u>Rreth Kompanise</u></center>
+        </div>
+
+        <div class="slidshow-container">
+          <div class="slide ">
+            <img class="sliderImages" src="photos\server.jpeg">
+          </div>
+          <div class="slide ">
+            <img class="sliderImages" src="photos\razer.jpeg">
+          </div>
+          <div class="slide ">
+            <img class="sliderImages" src="photos\company.jpeg">
+          </div>
+          <a class="prev" id="prev">&#10094;</a>
+          <a class="next" id="next">&#10095;</a>
+        </div>
+  
+        <img src="photos/kompania.jpg" id="mainimg">
+        <div id="title">
+          <h4><u><b>HISTORIA</b></u></h4>
+        </div> 
+        <div id="text">
+            <p>
+              Mirë se vini në dyqanin TechEcom, dyqani juaj numër një për të gjitha produktet elektronike.<br> Ne jemi të përkushtuar t'ju ofrojmë më të mirën e produktit, me fokus në besueshmëri, shërbimi<br> ndaj klientit dhe cilesi unike.
+              E themeluar në vitin 2010 nga Enes Hetemi dhe bashkpuntori i tij<br> Leke Kelmendi. TechEcom ka bërë një rrugë të gjatë nga fillimet e tij në një zyre te shtëpisë.<br> Kur Enes Hetemi filloi për herë të parë, pasioni i tij për ndihmen e klienteve, e shtyu atë të bëjë <br>kërkime intensive dhe i dha atij shtysë për ta kthyer punën e palodhur në një dyqan online.<br> Ne tani u shërbejmë klientëve në të gjithë vendin psh, ne Kosove, Maqedoni, Shqiperi,<br> e shume vende tjera te botes dhe jemi të entuziazmuar që jemi pjesë e tregtise <br>se produkteve elektronike.
+            </p>
+          </div>
+          <div id="title1">
+            <h4><u><b>DETYRA JONE</b></u></h4>
+          </div> 
+          <div id="text1">
+          <p>Ne si kompani e kemi per detyre qe te ofrojme <br>keto sherbime si blerjen/shitjen e produkteve <br>elektronike, transportimin e mallrave te porositura <br>nga shume kliente dhe servisimin <br>e produkteve te demtuara.</p>
+          </div>
+          <div id="title2">
+            <h4><u><b>VIZIONI</b></u></h4>
+          </div> 
+          <div id="text2">
+          <p>Ne si kompani mundohemi te lehtesojme <br>jeten e klienteve tane, me produkte me <br>kualitative ne mbare boten si dhe me<br> nje cmim me efikas.</p>
+          </div>
+          <div class="center0">
+            <div class="stars">
+              <input type="radio" id="five" name="rate" value="5">
+              <label for="five"></label>
+              <input type="radio" id="four" name="rate" value="4">
+              <label for="four"></label>
+              <input type="radio" id="three" name="rate" value="3">
+              <label for="three"></label>
+              <input type="radio" id="two" name="rate" value="2">
+              <label for="two"></label>
+              <input type="radio" id="one" name="rate" value="1">
+              <label for="one"></label>
+              <span class="result"></span>   
+            </div>
+         </div>
+         <div id="paragraph">
+          <p>Jepni nje vleresim per kompanine tone</p>
+         </div>
+         <form action="Rreth Nesh.html">
+          <textarea type="text" class="textarea" placeholder="Jep me shume detaje rreth vlersimit... " id="txtName" ></textarea>
+              <input type="submit" onclick="return ValidateTextBox()" id="btnCheck"  value="Kliko" class="buttons">
+              <input type="submit"  onclick="clearElements()" id="btnCheck" value="Fshij" class="buttons">
+            </form>
+            </div>
+    </main>
+    <footer>
+        <div class="footer">
+          <div class="content1">
+            <div class="left box">
+              <h2>Te drejtat me ligj</h2>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatibus magni vitae, ipsa omnis quidem repellendus possimus. Consequatur doloremque unde temporibus deleniti, minus dolore earum fugiat sapiente autem, sed ipsum minima, rerum voluptatem consectetur nemo? Numquam obcaecati sapiente commodi illum!</p>
+                <div class="social">
+                  <a href="https://facebook.com/" target="_blank"><img src="C:\Users\Admin\Documents\GitHub\Webfaqja\photos\facebook.jpg"><span class="fab fa-facebook-f"></span></a>
+                  <a href="https://twitter.com/" target="_blank"><img src="C:\Users\Admin\Documents\GitHub\Webfaqja\photos\twitter.jpg"><span class="fab fa-twitter"></span></a>
+                  <a href="https://instagram.com/" target="_blank"><img src="C:\Users\Admin\Documents\GitHub\Webfaqja\photos\instagram.jpg"><span class="fab fa-instagram"></span></a>
+                  <a href="https://youtube.com/" target="_blank"><img src="C:\Users\Admin\Documents\GitHub\Webfaqja\photos\youtube.jpg"><span class="fab fa-youtube"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="center box">
+              <h2>Adresa</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">Bill Klinton, Kosova</span>
+                </div>
+                <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+383-44-111-111</span>
+                </div>
+                <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">email@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="right box">
+              <h2>Navbar</h2>
+              <div class="content">
+                <div class="nav1">
+                  <ul>
+                    <li><a href="#">Ballina</a></li>
+                    <li><a href="#">Produktet</a></li>
+                    <li><a href="#">RethNesh</a></li>
+                    <li><a href="#">Kontakti</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <center>
+              <span class="credit">Ndertuar nga <a href="https://www.google.com">Leke Kelmendi</a> | </span>
+              <span class="far fa-copyright"></span><span> 2022 Te gjitha te drejtat e rezervuara</span>
+            </center>
+          </div>
+         </div>
+        </footer>
+        <div class="scroll-bar" ></div>
+    </body>
+</html>

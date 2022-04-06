@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .themain{
+    background-color: lightgray;
+    height: auto;
+    width:auto;
+    position: relative;
+  }
+  .maintxt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40pt;
+    font-style: bold;
+    color: darkblue;
+    cursor: pointer;
+  }
+  #mainimg{
+   width: 300pt;
+   height: 200pt;
+   padding: 30pt;
+   
+  }
+  #title{
+    font-family: arial;
+    font-size: 25pt;
+    color: yellowgreen;
+    transform: translate(35%,-650%);
+  }
+  #text{
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    right: 50%;
+    transform: translate(35%,-110%);
+  }
+
+  .slide {
+    display: none;
+  }
+  .slidshow-container {
+    position: relative;
+    width: 95%;
+    margin: auto;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 70%;
+    transition: 0.3s ease;
+    user-select: none;
+  }
+  .next {
+    right:0%;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: #7c8c3c;
+  }
+  .sliderImages {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  
+  #title1{
+    font-family: arial;
+    font-size: 25pt;
+    color: yellowgreen;
+    transform: translate(20%,-500%);
+  }
+  #text1{
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    right: 50%;
+    transform: translate(12%,-150%);
+  }
+  #title2{
+    font-family: arial;
+    font-size: 25pt;
+    color: yellowgreen;
+    transform: translate(65%,-900%);
+  }
+  #text2{
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    right: 50%;
+    transform: translate(60%,-350%);
+  }
+
+  .center0{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+  }
+  
+  .center0 .stars{
+    height: 150px;
+    width: 500px;
+    text-align: center;
+  }
+
+  .stars input{
+    display: none;
+  }
+  .stars label{
+    float: right;
+    font-size: 100px;
+    color: gray;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+  }
+  .stars label:before{
+    content: '★';
+  }
+
+  .stars input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+  .stars:not(:checked) > label:hover,
+  .stars:not(:checked) > label:hover ~ label{
+    color: gold;
+  }
+  .stars input:checked > label:hover,
+  .stars input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+  }
+  .stars .result:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 50%;
+    transform: translate(-45%,15%);
+    bottom: -30px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+  }
+
+  .stars input:checked ~ .result:before{
+    display: block;
+  }
+  .stars #five:checked ~ .result:before{
+    content: "Shkelqyeshem";
+  }
+  .stars #four:checked ~ .result:before{
+    content: "Shume Mire";
+  }
+  .stars #three:checked ~ .result:before{
+    content: "Mesatare";
+  }
+  .stars #two:checked ~ .result:before{
+    content: "Nuk me pelqeu";
+  }
+  .stars #one:checked ~ .result:before{
+    content: "Dobet";
+  }
+
+  #paragraph{
+    font-family: Arial;
+    margin-left:40pt;
+  }
+
+  .textarea{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 12pt;
+    padding: 1em;
+    border: 2pt transparent;
+    outline:none;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 400pt;
+    height: 100pt;
+    margin:40pt;
+    padding: 10pt;
+    border-radius: 10pt;;
+  }
+
+
+    .textarea:focus{
+      cursor:text;
+      color: #333;
+      background-color: whitesmoke;
+      border-color: gray;
+    }
+
+    #button{
+      width: 70pt;
+      align-items: center;
+    }
+
+    .buttons{
+      width:65pt;
+      transform: translateX(-730%);
+      margin: 40pt;
+      height:20pt;
+    }
+
+    .scroll-bar{
+      overflow-x:scroll;
+      overflow-y:scroll;
+      height:auto;
+      width:auto;
+    }
+
+    
+  
+
+    
