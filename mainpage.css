@@ -88,5 +88,43 @@
   .four{
    padding-left: 30pt;
   }
-          
-   
+        
+  
+  @media only screen and (max-width:400pt){
+    .banner img{
+       height: 80pt; 
+       width:80pt; 
+       padding:50pt;
+      }
+.first_txt{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15pt;
+    font-family: Arial;
+    width:120pt;
+    height:40pt;
+}
+
+.img-square img{
+width:150pt;
+height:150pt;
+}
+    }
+ 
+    /*
+    style="width:200pt; height:200pt;"
+*/
+    @media only screen and (max-width:848pt){
+      .banner img{
+         height: 180pt; 
+         width:800pt; 
+         padding:100pt
+        }
+      }
+        
+  
+      
+     
