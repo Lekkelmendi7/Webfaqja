@@ -24,55 +24,56 @@
   }
   #title{
     font-family: arial;
-    font-size: 25pt;
+    font-size: 15px;
+    font-weight: bold;
     color: yellowgreen;
-    transform: translate(35%,-650%);
+    transform: translate(40%,-650%);
   }
   #text{
-    font-size: 15pt;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     left: 50%;
     right: 50%;
-    transform: translate(35%,-110%);
+    transform: translate(40%,-80%);
   }
 
   #title1{
     font-family: arial;
-    font-size: 25pt;
+    font-size: 15px;
     color: yellowgreen;
-    transform: translate(20%,-500%);
+    transform: translate(10%,-500%);
   }
   #text1{
-    font-size: 15pt;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     left: 50%;
     right: 50%;
-    transform: translate(12%,-150%);
+    transform: translate(5%,-70%);
   }
   #title2{
     font-family: arial;
-    font-size: 25pt;
+    font-size: 15px;
     color: yellowgreen;
     transform: translate(65%,-900%);
   }
   #text2{
-    font-size: 15pt;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     left: 50%;
     right: 50%;
-    transform: translate(60%,-350%);
+    transform: translate(60%,-230%);
   }
 
   .center0{
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, 80%);
   }
   
   .center0 .stars{
-    height: 150px;
-    width: 500px;
+    height: 100px;
+    width: 480px;
     text-align: center;
   }
 
@@ -106,7 +107,7 @@
   .stars .result:before{
     position: absolute;
     content: "";
-    width: 100%;
+    width: 50%;
     left: 50%;
     transform: translate(-45%,15%);
     bottom: -30px;
@@ -137,7 +138,7 @@
 
   #paragraph{
     font-family: Arial;
-    margin-left:40pt;
+    margin-left:30px;
   }
 
   .textarea{
@@ -182,3 +183,22 @@
       height:auto;
       width:auto;
     }
+
+    * {box-sizing:border-box}
+
+
+
+
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  transform: translate(40%,-60%);
+}
+

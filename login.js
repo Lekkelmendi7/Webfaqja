@@ -1,4 +1,4 @@
-/*const form = document.querySelector("form");
+const form = document.querySelector("form");
 eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
 pField = form.querySelector(".password"),
@@ -38,4 +38,4 @@ form.onsubmit = (e)=>{
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
     window.location.href = form.getAttribute("action"); 
   }
-}*/
+}
