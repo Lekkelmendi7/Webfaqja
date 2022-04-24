@@ -145,8 +145,8 @@ INSERT INTO `review` (`id`, `email`, `rating_grade`, `description`, `rev_date`, 
 (11, 'enes@gmail.com',5, 'laljndskncksdnk' , 12/03/2022,'User'),
 (12, 'eltonboshnjaku@gmail.com',4, 'djdjjsbkjbsdkj' , 18/03/2022,'User'),
 (15, 'ramizhoxha@gmail.com',3, 'acasnkjbhcsjj' , 19/03/2022,'User'),
-(12, 'mirlindareqica@gmail.com',4,'djdkjkdjhskjjs' , 21/03/2022,'User'),
-(12, 'blerinarrmoku@gmail.com',5, 'hdjskhjasjdk' , 24/03/2022,'User'),
+(17, 'mirlindareqica@gmail.com',4,'djdkjkdjhskjjs' , 21/03/2022,'User'),
+(18, 'blerinarrmoku@gmail.com',5, 'hdjskhjasjdk' , 24/03/2022,'User'),
 -- --------------------------------------------------------
 --
 -- Table structure for table `register`
@@ -250,17 +250,18 @@ ALTER TABLE `user`
 ALTER TABLE `contact`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
---
--- AUTO_INCREMENT for table `contacts`
---
-ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+
+--
+-- AUTO_INCREMENT for table `product`
+--
 
 --
 -- AUTO_INCREMENT for table `register`
@@ -283,6 +284,18 @@ ALTER TABLE `slider`
 
   ALTER TABLE `review`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+    DELETE TABLE `user`
+  WHERE `id`=15  AND 'name'="Ramiz";
+
+   DELETE TABLE `user`
+  WHERE `id`=17  AND 'name'="Mirlinda";
+
+  DELETE TABLE `review`
+  WHERE `id`=15  AND 'email'="ramizhoxha@gmail.com";
+
+  DELETE TABLE `review`
+  WHERE `id`=17  AND 'name'="mirlindareqica@gmail.com";
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
