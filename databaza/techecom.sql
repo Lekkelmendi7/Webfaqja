@@ -286,16 +286,16 @@ ALTER TABLE `slider`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
     DELETE TABLE `user`
-  WHERE `id`=15  AND 'name'="Ramiz";
+  WHERE `id`=15  AND `name`="Ramiz";
 
    DELETE TABLE `user`
-  WHERE `id`=17  AND 'name'="Mirlinda";
+  WHERE `id`=17  AND `name`="Mirlinda";
 
   DELETE TABLE `review`
-  WHERE `id`=15  AND 'email'="ramizhoxha@gmail.com";
+  WHERE `id`=15  AND `email`="ramizhoxha@gmail.com";
 
   DELETE TABLE `review`
-  WHERE `id`=17  AND 'name'="mirlindareqica@gmail.com";
+  WHERE `id`=17  AND `email`="mirlindareqica@gmail.com";
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
