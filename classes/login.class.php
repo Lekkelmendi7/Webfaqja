@@ -28,11 +28,11 @@ class Login{
             $_SESSION['user_id'] = $this->user['id'];
             $_SESSION['name'] = $this->user['name'];
             $_SESSION['role'] = $this->user['role'];
-            header('Location: ../index.php');
+            header('Location: ../Mainpage.php');
         }
         else{
             echo "<script>alert('Keni shkruar gabim email ose password.');
-            document.location='../index.php';
+            document.location='../Mainpage.php';
             </script>";
         }
     }
