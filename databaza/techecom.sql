@@ -94,7 +94,60 @@ INSERT INTO `product` (`id`, `titull`, `price`, `pershk`, `image`, `autori`) VAL
 (19, 'Iphone 13', '$850', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illum excepturi distinctio ratione qui temporibus nesciunt saepe vitae officia voluptates, eos voluptas sit suscipit, harum quam delectus. Mollitia, provident dicta?', '620921a910a0d6.52133538.jpeg', 'Enes');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `user`
+--
 
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `user` (`id`, `name`, `lname`, `email`, `password`, `role`) VALUES
+(6, 'Leke', 'Kelmendi', 'leke@gmail.com', 'lk62297', 'Admin'),
+(8, 'Agon', 'Mehmeti', 'agonmehmeti@gmail.com', '$2y$10$nSNxZvmEEZB0Ug.AUOPkyOftmTRN6AM7mHCqkBUWUgicmdKFtYpkS', '$2y$10$Q8F0Q0xZQNOPbEbROeJTH.Q7n/nGd5zBVmGkkX5gXSpmngnB4R4b2', 'User'),
+(11, 'Enes', 'Hetemi', 'enes@gmail.com', 'ehetemii44', 'Admin'),
+(12, 'Elton', 'Boshnjaku', 'eltonboshnjaku@gmail.com', 'eboshnjakuu', 'User');
+(15, 'Ramiz', 'Hoxha', 'ramizhoxha@gmail.com', 'ramizi1234', 'User');
+(17, 'Mirlinda','Reqica', 'mirlindareqica@gmail.com', 'mreqqicaa97', 'User');
+(18, 'Blerina', 'Rrmoku', 'blerina@gmail.com', 'blerina2000!', 'User');
+
+
+-- --------------------------------------------------------
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `review` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `rating_grade` smallint(4),
+  `description` varchar(255) NOT NULL,
+  `rev_date` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `user` (`id`, `email`, `rating_grade`, `description`, `rev_date`, `role`) VALUES
+(6, 'leke@gmail.com',5, 'ahahshhjsgjkcsgbjkcs' , 04/04/2022,'User'),
+(8, 'agonmehmeti@gmail.com',4, 'ahahshhjsgjahjahgdbgskd' , 01/02/2022,'Admin'),
+(11, 'enes@gmail.com',5, 'laljndskncksdnk' , 12/03/2022,'User'),
+(12, 'eltonboshnjaku@gmail.com',4, 'djdjjsbkjbsdkj' , 18/03/2022,'User'),
+(15, 'ramizhoxha@gmail.com',3, 'acasnkjbhcsjj' , 19/03/2022,'User'),
+(12, 'mirlindareqica@gmail.com',4,'djdkjkdjhskjjs' , 21/03/2022,'User'),
+(12, 'blerinarrmoku@gmail.com',5, 'hdjskhjasjdk' , 24/03/2022,'User'),
+-- --------------------------------------------------------
 --
 -- Table structure for table `register`
 --
