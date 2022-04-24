@@ -123,7 +123,7 @@ INSERT INTO `user` (`id`, `name`, `lname`, `email`, `password`, `role`) VALUES
 
 -- --------------------------------------------------------
 --
--- Table structure for table `user`
+-- Table structure for table `review`
 --
 
 CREATE TABLE `review` (
@@ -136,10 +136,10 @@ CREATE TABLE `review` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `register`
+-- Dumping data for table `review`
 --
 
-INSERT INTO `user` (`id`, `email`, `rating_grade`, `description`, `rev_date`, `role`) VALUES
+INSERT INTO `review` (`id`, `email`, `rating_grade`, `description`, `rev_date`, `role`) VALUES
 (6, 'leke@gmail.com',5, 'ahahshhjsgjkcsgbjkcs' , 04/04/2022,'User'),
 (8, 'agonmehmeti@gmail.com',4, 'ahahshhjsgjahjahgdbgskd' , 01/02/2022,'Admin'),
 (11, 'enes@gmail.com',5, 'laljndskncksdnk' , 12/03/2022,'User'),
@@ -227,6 +227,20 @@ ALTER TABLE `slider`
   ADD PRIMARY KEY (`id`);
 
 --
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+
+--
+-- Indexes for table `review`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -259,6 +273,16 @@ ALTER TABLE `register`
 --
 ALTER TABLE `slider`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+-- AUTO_INCREMENT for table `user`
+
+  ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+-- AUTO_INCREMENT for table `review`
+
+  ALTER TABLE `review`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
