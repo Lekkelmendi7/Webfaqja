@@ -21,3 +21,11 @@ session_start();
     }
 }
 ?>
+
+<?php if(isset($_GET['email'])): ?>
+        Your name is <?php echo $_GET["email"]; ?>
+<?php endif; ?>
+
+<?php if(isset($_GET['password'])): ?>
+        Your name is <?php echo $_GET["password"]; ?>
+<?php endif; ?>
