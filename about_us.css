@@ -9,66 +9,11 @@
     width:auto;
     position: relative;
   }
-  .maintxt{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:40pt;
-    font-style: bold;
-    color: darkblue;
-    cursor: pointer;
-  }
+  
   #mainimg{
    width: 300pt;
    height: 200pt;
    padding: 30pt;
-   
-  }
-  #title{
-    font-family: arial;
-    font-size: 15px;
-    font-weight: bold;
-    color: yellowgreen;
-    transform: translate(40%,-650%);
-  }
-  #text{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    left: 50%;
-    right: 50%;
-    transform: translate(40%,-80%);
-  }
-
-  #title1{
-    font-family: arial;
-    font-size: 15px;
-    color: yellowgreen;
-    transform: translate(10%,-500%);
-  }
-  #text1{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    left: 50%;
-    right: 50%;
-    transform: translate(5%,-70%);
-  }
-  #title2{
-    font-family: arial;
-    font-size: 15px;
-    color: yellowgreen;
-    transform: translate(65%,-900%);
-  }
-  #text2{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    left: 50%;
-    right: 50%;
-    transform: translate(60%,-230%);
-  }
-
-  .center0{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, 300%);
   }
   
   .center0 .stars{
@@ -157,7 +102,11 @@
     border-radius: 10pt;;
   }
 
-
+  .slideshow-container  {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
     .textarea:focus{
       cursor:text;
       color: #333;
@@ -182,11 +131,6 @@
 
 
 
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
     
     /* Hide the images by default */
     .mySlides {
@@ -272,6 +216,16 @@
 
 
 @media only screen and (min-width: 300px) {
+
+  .maintxt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    transform: translate(10px, 10px);
+    font-style: bold;
+    color: darkblue;
+    cursor: pointer;
+}
+
   .button-click {
     width: 65px;
     transform: translate(-950%,-100%);
@@ -285,10 +239,112 @@
   height: 20px;
 }
 .center0 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 285%);
+}
+.numbertext {
+color: white;
+font-size: 12px;
+padding: 50px 50px;
 position: absolute;
-top: 45%;
-left: 50%;
-transform: translate(-50%, 250%);
+top: 0;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -15px;
+padding: 10px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.prev{
+  margin-left: 40px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  transform: translate(-290px, 10px);
+}
+#title{
+  font-family: arial;
+  font-size: 15px;
+  color: yellowgreen;
+  transform: translate(65%,-690%);
+}
+#text{
+  font-size: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    right: 50%;
+    transform: translate(45%,-180%);
+}
+
+#title1 {
+  font-family: arial;
+  font-size: 15px;
+  color: yellowgreen;
+  transform: translate(10%,-500%);
+}
+#title2 {
+  font-family: arial;
+  font-size: 15px;
+  color: yellowgreen;
+  transform: translate(65%,-800%);
+}
+#text2 {
+  font-size: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 50%;
+  right: 50%;
+  transform: translate(600px, -280px);
+}
+#text1 {
+  font-size: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 50%;
+  right: 50%;
+  transform: translate(60px, -170px);
+}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+  .maintxt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40pt;
+    transform: translate(10px, 10px);
+    font-style: bold;
+    color: darkblue;
+    cursor: pointer;
+}
+
+  .button-click {
+    width: 65px;
+    transform: translate(-950%,-100%);
+    margin: 40px;
+    height: 20px;
+}
+.button-delete {
+  width: 65px;
+  transform: translate(-1000%,-100%);
+  margin: 40px;
+  height: 20px;
+}
+.center0 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 165%);
 }
 .numbertext {
 color: white;
@@ -322,85 +378,46 @@ user-select: none;
 }
 #title {
   font-family: arial;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 20px;
   color: yellowgreen;
-  transform: translate(40%,250%);
+  transform: translate(65%,-1090%);
 }
 #text{
-  font-size: 5px;
+  font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    right: 50%;
+    transform: translate(45%,-230%);
+}
+
+#title1 {
+  font-family: arial;
+  font-size: 20px;
+  color: yellowgreen;
+  transform: translate(10%,-700%);
+}
+#title2 {
+  font-family: arial;
+  font-size: 20px;
+  color: yellowgreen;
+  transform: translate(50%,-1050%);
+}
+#text2 {
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   left: 50%;
   right: 50%;
-  transform: translate(40%,-80%);
+  transform: translate(450px, -230px);
 }
-
 #text1 {
-  font-size: 5px;
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   left: 50%;
   right: 50%;
-  transform: translate(5%,-70%);
+  transform: translate(60px, -150px);
 }
 
-
-
 }
-
-  
   
 
-  @media only screen and (min-width: 700px) {
-    
-
-    .button-click {
-      width: 65px;
-      transform: translate(-950%,-100%);
-      margin: 40px;
-      height: 20px;
-  }
-  .button-delete {
-    width: 65px;
-    transform: translate(-1000%,-100%);
-    margin: 40px;
-    height: 20px;
-}
-.center0 {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, 250%);
-}
-.numbertext {
-  color: white;
-  font-size: 12px;
-  padding: 50px 50px;
-  position: absolute;
-  top: 0;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -15px;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-  .prev{
-    margin-left: 40px;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    transform: translate(-290px, 10px);
-  }
-    
-    
-    }
+  
